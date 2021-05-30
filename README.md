@@ -22,11 +22,11 @@
 1. Clonar repositorio: git clone https://github.com/fmbetancourt/dockerized-laravel8.git
 1. Crear archivo .env (copiar .env.example)
 1. Configurar variables de entorno de BD (Según lo indicado en el docker-compose.yml)
+1. Desde la consola, ejecutar comando docker-compose `docker-compose up -d --build`
 1. Desde la consola, ingresar al contenedor docker de la app `docker exec -it app bash`
 1. Ejecutar comando `php artisan key:generate`
 1. Ejecutar comando `php artisan migrate`
 1. Probar ambiente ingresando a http://localhost:800/
-
 
 
 
