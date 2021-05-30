@@ -1,4 +1,22 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel 8 con Docker Compose
+
+1. Clonar repositorio: git clone https://github.com/fmbetancourt/dockerized-laravel8.git
+1. Ejecutar desde la consola `composer update`
+1. Ejecutar desde la consola `npm install`
+1. Crear archivo .env (copiar .env.example)
+1. Configurar variables de entorno de BD (Según lo indicado en el docker-compose.yml)
+1. Desde la consola, ingresar al contenedor docker de la app `docker exec -it app bash`
+1. Ejecutar comando `php artisan key:generate`
+1. Ejecutar comando `php artisan migrate`
+1. Probar ambiente ingresando a http://localhost:800/
+
+
+
+<p align="center">
+    <a href="https://laravel.com" target="_blank">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="">
+    </a>
+</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
