@@ -25,7 +25,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "800:80"
+      - "8081:80"
       - "4430:443"
     volumes:
       - ./:/var/www
@@ -40,12 +40,12 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "33060:3306"
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: fmbetancourt_db
       MYSQL_USER: fmb_user
-      MYSQL_PASSWORD: fmb_pass
+      MYSQL_PASSWORD: fmb123
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
